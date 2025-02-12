@@ -48,36 +48,41 @@
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.0",
     "@changesets/cli": "^2.27.12",
-    "@cloudflare/vitest-pool-workers": "^0.6.7",
-    "@cloudflare/workers-types": "^4.20250124.3",
-    "@eslint/js": "^9.19.0",
-    "@trivago/prettier-plugin-sort-imports": "^5.2.1",
+    "@cloudflare/vitest-pool-workers": "^0.6.14",
+    "@cloudflare/workers-types": "^4.20250204.0",
+    "@eslint/js": "^9.20.0",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@types/eslint": "^9.6.1",
     "@types/eslint__js": "^8.42.3",
-    "@vitest/coverage-istanbul": "2.1.8",
-    "@vitest/ui": "2.1.8",
-    "esbuild": "^0.24.2",
-    "eslint": "^9.19.0",
+    "@vitest/coverage-istanbul": "2.1.9",
+    "@vitest/ui": "2.1.9",
+    "esbuild": "^0.25.0",
+    "eslint": "^9.20.1",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-prettier": "^5.2.3",
-    "miniflare": "^3.20250124.0",
-    "prettier": "^3.4.2",
+    "miniflare": "^3.20250204.0",
+    "prettier": "^3.5.0",
     "typescript": "^5.7.3",
-    "typescript-eslint": "^8.21.0",
+    "typescript-eslint": "^8.24.0",
     "vite-tsconfig-paths": "^5.1.4",
     "vitepress": "1.6.3",
-    "vitest": "2.1.8",
-    "wrangler": "^3.105.1"
+    "vitest": "2.1.9",
+    "wrangler": "^3.108.1"
   },
   "dependencies": {
     "@hono/valibot-validator": "^0.5.2",
-    "hono": "^4.6.18",
+    "hono": "^4.7.0",
     "valibot": "^0.42.1"
   },
   "pnpm": {
     "overrides": {
-      "@types/node": "22.10.10"
-    }
+      "@types/node": "22.13.1"
+    },
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp",
+      "workerd"
+    ]
   },
-  "packageManager": "pnpm@9.15.4"
+  "packageManager": "pnpm@10.3.0"
 }
